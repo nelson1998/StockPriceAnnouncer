@@ -4,6 +4,9 @@ import requests
 
 engine = pyttsx3.init()
 
+engine.setProperty("rate", 160)
+engine.setProperty("volume", 1.0)
+
 ticker = str(input("Enter a stock ticker."))
 final_price = ""
 
